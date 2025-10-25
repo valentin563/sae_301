@@ -1,35 +1,202 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./src/style.css" rel="stylesheet" />
-  </head>
 
-  <body class="flex flex-col justify-center items-center gap-10">
-    <header class="flex flex-row  bg-blue-400 justify-between w-full">
-      <img src="./assets/logo.png" alt="foot.fr" class="">
-      <div class="flex flex-row gap-5 justify-center ">
-        <h2 class="text-center">Chaussures</h2>
-        <h2 class="text-center">Maillots</h2>
-        <h2 class="text-center">Ballons</h2>
-      </div>
-      <div class="gap-4 flex justify-center">
-        <button class="">s'inscrire</button>
-        <button class="">se connecter</button>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./src/style.css" rel="stylesheet" />
+</head>
 
-    <article class="bg-[url(/assets/ballon_cdm_grande.png)] w-5xl h-150 p-5 flex flex-col justify-end rounded-2xl">
-      <h1 class="bg-blue-400 w-fit p-1.5">NOUVEAU</h1>
-      <h2 class="text-white">BALLON COUPE DU MONDE 2026</h2>
+<body class="bg-white">
+
+  <header class="flex items-center justify-between bg-blue-400 pr-4">
+    <img src="./assets/logo.png" alt="FOOT.FR" class="h-full">
+    <nav>
+      <ul class="flex gap-8 text-black">
+        <li class="hover:bg-white rounded-2xl p-3"><a href="#chaussures">CHAUSSURES</a></li>
+        <li class="hover:bg-white rounded-2xl p-3"><a href="#maillots">MAILLOTS</a></li>
+        <li class="hover:bg-white rounded-2xl p-3"><a href="#ballons">BALLONS</a></li>
+      </ul>
+    </nav>
+    <section class="flex gap-4">
+      <button class="bg-white px-4 py-1 rounded">S'INSCRIRE</button>
+      <button class="bg-white px-4 py-1 rounded">SE CONNECTER</button>
+    </section>
+  </header>
+
+  <main class="max-w-7xl mx-auto p-8">
+    <article class="mb-12 relative rounded-lg overflow-hidden h-96">
+      <img src="./assets/ballon_cdm_grande.png" alt="Ballon coupe du monde" class="w-full h-full object-cover">
+      <section class="absolute bottom-8 left-8">
+        <span class="bg-blue-400 text-white px-3 py-1">NOUVEAU</span>
+        <h2 class="text-white text-2xl mt-2">BALLON COUPE DU MONDE 2026</h2>
+      </section>
     </article>
 
-    <article class="flex items-start w-5xl text-blue-400">
-      <h1>CHAUSSURES</h1>
-      <figure><img src="./assets/nike.png" alt="nike crampons"></figure>
+    <section id="chaussures" class="mb-12">
+      <h2 class="text-blue-400 text-2xl mb-6">CHAUSSURES</h2>
+      <section class="grid grid-cols-3 gap-8">
+        <article class="bg-white rounded-lg shadow p-4">
+          <figure>
+            <img src="./assets/nike.png" alt="Nike Zoom" class="w-full">
+            <figcaption>
+              <h3 class="font-medium mt-2">NIKE AIR ZOOM MERCURIAL SUPERFLY 10 ELITE FG ROSE</h3>
+              <p class="text-blue-400 font-bold">209.99€</p>
+              <button
+                class="hover:bg-blue-400 transition-colors duration-200 w-full bg-black text-white py-2 mt-4 rounded flex items-center justify-center gap-2">
+                Ajouter au panier
+              </button>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="bg-white rounded-lg shadow p-4">
+          <figure>
+            <img src="./assets/nike_junior.png" alt="Nike Zoom" class="w-full">
+            <figcaption>
+              <h3 class="font-medium mt-2">NIKE AIR ZOOM MERCURIAL SUPERFLY 10 ACADEMY JUNIOR FG/MG ROSE</h3>
+              <p class="text-blue-400 font-bold">56.24 €</p>
+              <button
+                class="hover:bg-blue-400 transition-colors duration-200 w-full bg-black text-white py-2 mt-4 rounded flex items-center justify-center gap-2">
+                Ajouter au panier
+              </button>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="bg-white rounded-lg shadow p-4">
+          <figure>
+            <img src="./assets/adidas.png" alt="adidas" class="w-full">
+            <figcaption>
+              <h3 class="font-medium mt-2">ADIDAS PREDATOR BSR ELITE FT FG NOIR ROUGE</h3>
+              <p class="text-blue-400 font-bold">209.99€</p>
+              <button
+                class="hover:bg-blue-400 transition-colors duration-200 w-full bg-black text-white py-2 mt-4 rounded flex items-center justify-center gap-2">
+                Ajouter au panier
+              </button>
+            </figcaption>
+          </figure>
+        </article>
+        <!-- Répéter le même pattern pour les autres chaussures -->
+      </section>
+    </section>
 
-    </article>
 
-  </body>
+    <section id="maillots" class="mb-12">
+      <h2 class="text-blue-400 text-2xl mb-6">MAILLOTS</h2>
+      <section class="grid grid-cols-3 gap-8">
+        <article class="bg-white rounded-lg shadow p-4">
+          <figure>
+            <img src="./assets/barca.png" alt="barca" class="w-full">
+            <figcaption>
+              <h3 class="font-medium mt-2">MAILLOT FC BARCELONE EXTÉRIEUR AUTHENTIQUE 2025/26</h3>
+              <p class="text-blue-400 font-bold">250.00€</p>
+              <button
+                class="hover:bg-blue-400 transition-colors duration-200 w-full bg-black text-white py-2 mt-4 rounded flex items-center justify-center gap-2">
+                Ajouter au panier
+              </button>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="bg-white rounded-lg shadow p-4">
+          <figure>
+            <img src="./assets/real.png" alt="real" class="w-full">
+            <figcaption>
+              <h3 class="font-medium mt-2">MAILLOT REAL MADRID DOMICILE 2025/26</h3>
+              <p class="text-blue-400 font-bold">99.99€</p>
+              <button
+                class="hover:bg-blue-400 transition-colors duration-200 w-full bg-black text-white py-2 mt-4 rounded flex items-center justify-center gap-2">
+                Ajouter au panier
+              </button>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="bg-white rounded-lg shadow p-4">
+          <figure>
+            <img src="./assets/man_u.png" alt="man_u" class="w-full">
+            <figcaption>
+              <h3 class="font-medium mt-2">MAILLOT MANCHESTER UNITED DOMICILE 2025/26</h3>
+              <p class="text-blue-400 font-bold">119.99€</p>
+              <button
+                class="hover:bg-blue-400 transition-colors duration-200 w-full bg-black text-white py-2 mt-4 rounded flex items-center justify-center gap-2">
+                Ajouter au panier
+              </button>
+            </figcaption>
+          </figure>
+        </article>
+        <!-- Répéter le même pattern pour les autres chaussures -->
+      </section>
+    </section>
+    <!-- Sections similaires pour MAILLOTS et BALLONS -->
+
+
+
+    <section id="ballons" class="mb-12">
+      <h2 class="text-blue-400 text-2xl mb-6">MAILLOTS</h2>
+      <section class="grid grid-cols-3 gap-8">
+        <article class="bg-white rounded-lg shadow p-4">
+          <figure>
+            <img src="./assets/nike_blanc.png" alt="ballon" class="w-full">
+            <figcaption>
+              <h3 class="font-medium mt-2">BALLON NIKE PITCH BLANC BLEU FONCÉ</h3>
+              <p class="text-blue-400 font-bold">22.90€</p>
+              <button
+                class="hover:bg-blue-400 transition-colors duration-200 w-full bg-black text-white py-2 mt-4 rounded flex items-center justify-center gap-2">
+                Ajouter au panier
+              </button>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="bg-white rounded-lg shadow p-4">
+          <figure>
+            <img src="./assets/nike_jaune.png" alt="ballon" class="w-full">
+            <figcaption>
+              <h3 class="font-medium mt-2">BALLON NIKE PREMIER LEAGUEACADEMY JAUNE ROSE</h3>
+              <p class="text-blue-400 font-bold">29.99€</p>
+              <button
+                class="hover:bg-blue-400 transition-colors duration-200 w-full bg-black text-white py-2 mt-4 rounded flex items-center justify-center gap-2">
+                Ajouter au panier
+              </button>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="bg-white rounded-lg shadow p-4">
+          <figure>
+            <img src="./assets/ballon_cdm.png" alt="ballon" class="w-full">
+            <figcaption>
+              <h3 class="font-medium mt-2">BALLON ADIDAS TRIONDA COUPE DU MONDE 2026</h3>
+              <p class="text-blue-400 font-bold">30.99€</p>
+              <button
+                class="hover:bg-blue-400 transition-colors duration-200 w-full bg-black text-white py-2 mt-4 rounded flex items-center justify-center gap-2">
+                Ajouter au panier
+              </button>
+            </figcaption>
+          </figure>
+        </article>
+        <!-- Répéter le même pattern pour les autres chaussures -->
+      </section>
+    </section>
+
+  </main>
+
+  <footer class="bg-black text-white mt-12 p-8">
+    <section class="flex justify-center gap-32  ">
+      <img src="./assets/logo.png" alt="logo " class="h-16 w-auto object-contain ">
+      <article>
+        <h3 class="font-bold mb-4">CATÉGORIES</h3>
+        <ul class="pl-3">
+          <li>CHAUSSURES</li>
+          <li>MAILLOTS</li>
+          <li>BALLONS</li>
+        </ul>
+      </article>
+      <article>
+        <h3 class="font-bold mb-4">RÉSEAUX</h3>
+        <ul class="pl-3">
+          <li>TWITTER</li>
+          <li>INSTAGRAM</li>
+        </ul>
+      </article>
+    </section>
+  </footer>
+</body>
+
 </html>
