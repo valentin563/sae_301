@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../src/style.css" rel="stylesheet" />
+</head>
+
+<body class="bg-white">
+
+    <header class="flex items-center justify-between bg-blue-400 pr-4">
+        <img src="../assets/logo.png" alt="FOOT.FR" class="h-full">
+        <nav>
+            <ul class="flex gap-8 text-black">
+                <li class="hover:bg-white rounded-2xl p-3"><a href="#chaussures">CHAUSSURES</a></li>
+                <li class="hover:bg-white rounded-2xl p-3"><a href="#maillots">MAILLOTS</a></li>
+                <li class="hover:bg-white rounded-2xl p-3"><a href="#ballons">BALLONS</a></li>
+            </ul>
+        </nav>
+        <section class="flex gap-4">
+            <button class="bg-white px-4 py-1 rounded">S'INSCRIRE</button>
+            <button class="bg-white px-4 py-1 rounded">SE CONNECTER</button>
+        </section>
+    </header>
+
+    <main class="max-w-7xl mx-auto p-8">
+        <section class="flex flex-col lg:flex-row gap-12 items-start">
+            <!-- Galerie / Image produit -->
+            <figure class="w-full lg:w-1/2">
+                <img src="../assets/nike-zoom-large.png" alt="Nike Air Zoom Mercurial"
+                    class="w-full h-[420px] object-contain rounded-lg">
+                <figcaption class="mt-6 flex items-center gap-4">
+                    <ul class="flex gap-4">
+                        <li>
+                            <button class="w-16 h-16 p-2 rounded-md bg-white border shadow-sm">
+                                <img src="../assets/thumb1.png" alt="" class="w-full h-full object-contain">
+                            </button>
+                        </li>
+                        <li>
+                            <button class="w-16 h-16 p-2 rounded-md bg-white border shadow-sm">
+                                <img src="../assets/thumb2.png" alt="" class="w-full h-full object-contain">
+                            </button>
+                        </li>
+                        <li>
+                            <button class="w-16 h-16 p-2 rounded-md bg-white border shadow-sm">
+                                <img src="../assets/thumb3.png" alt="" class="w-full h-full object-contain">
+                            </button>
+                        </li>
+                        <li>
+                            <button class="w-16 h-16 p-2 rounded-md bg-white border shadow-sm">
+                                <img src="../assets/thumb4.png" alt="" class="w-full h-full object-contain">
+                            </button>
+                        </li>
+                    </ul>
+                </figcaption>
+            </figure>
+
+            <!-- Infos produit -->
+            <article class="w-full lg:w-1/2">
+                <h1 class="text-2xl lg:text-3xl font-extrabold leading-tight text-black mb-4">
+                    NIKE AIR ZOOM MERCURIAL SUPERFLY 10 ELITE FG ROSE
+                </h1>
+
+                <p class="inline-block bg-blue-400 text-white font-semibold px-4 py-2 rounded-sm mb-4">PROMOTION</p>
+
+                <div class="mt-6 mb-6">
+                    <p class="text-2xl text-blue-400 font-bold">209.99€ <span
+                            class="text-gray-400 line-through ml-3 text-lg">279.99 €</span></p>
+                </div>
+
+                <section aria-labelledby="taille-label" class="mb-6">
+                    <p id="taille-label" class="font-semibold mb-3">TAILLE</p>
+                    <div class="grid grid-cols-6 gap-3 max-w-md">
+                        <!-- tailles -->
+                        <button class="px-4 py-3 bg-gray-100 rounded-md border text-sm">38</button>
+                        <button class="px-4 py-3 bg-gray-100 rounded-md border text-sm">39</button>
+                        <button class="px-4 py-3 bg-gray-100 rounded-md border text-sm">40</button>
+                        <button class="px-4 py-3 bg-gray-100 rounded-md border text-sm">41</button>
+                        <button class="px-4 py-3 bg-gray-100 rounded-md border text-sm">42</button>
+                        <button class="px-4 py-3 bg-gray-100 rounded-md border text-sm">43</button>
+
+                        <button class="px-4 py-3 bg-gray-100 rounded-md border text-sm">44</button>
+                        <button class="px-4 py-3 bg-gray-100 rounded-md border text-sm">45</button>
+                        <button class="px-4 py-3 bg-gray-100 rounded-md border text-sm">46</button>
+                        <button class="px-4 py-3 bg-gray-100 rounded-md border text-sm">47</button>
+                        <button class="px-4 py-3 bg-gray-100 rounded-md border text-sm">48</button>
+                        <button class="px-4 py-3 bg-gray-100 rounded-md border text-sm">49</button>
+
+                        <button class="px-4 py-3 bg-gray-100 rounded-md border text-sm">50</button>
+                        <button class="px-4 py-3 bg-gray-100 rounded-md border text-sm">51</button>
+                        <button class="px-4 py-3 bg-gray-100 rounded-md border text-sm">52</button>
+                    </div>
+                </section>
+
+                <form class="mt-4">
+                    <button type="button"
+                        class="w-full flex items-center justify-center gap-3 bg-black text-white py-3 rounded-lg hover:bg-blue-400 transition-colors duration-200">
+                        <img src="../assets/cart-white.svg" alt="" class="h-5 w-auto"> Ajouter au panier
+                    </button>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <footer class="bg-black text-white mt-12 p-8">
+        <section class="flex justify-center gap-32  ">
+            <img src="../assets/logo.png" alt="logo " class="h-16 w-auto object-contain ">
+            <article>
+                <h3 class="font-bold mb-4">CATÉGORIES</h3>
+                <ul class="pl-3">
+                    <li>CHAUSSURES</li>
+                    <li>MAILLOTS</li>
+                    <li>BALLONS</li>
+                </ul>
+            </article>
+            <article>
+                <h3 class="font-bold mb-4">RÉSEAUX</h3>
+                <ul class="pl-3">
+                    <li>TWITTER</li>
+                    <li>INSTAGRAM</li>
+                </ul>
+            </article>
+        </section>
+    </footer>
+</body>
+
+</html>
